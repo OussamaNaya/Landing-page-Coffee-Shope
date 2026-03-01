@@ -596,6 +596,22 @@ h3,
     color: rgba(255, 255, 255, 0.5);
 }
 
+.dev-credit {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.dev-credit a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.dev-credit a:hover {
+    color: #fff;
+}
+
 /* About Section */
 .about-section {
     background: var(--bg-color);
