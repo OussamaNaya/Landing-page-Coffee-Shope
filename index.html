@@ -93,64 +93,106 @@
                     <p>Une sélection raffinée pour ravir vos papilles</p>
                 </div>
 
-                <div class="product-grid">
-                    <!-- Product 1 -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/coffee_hero_latte.png" alt="Cappuccino marocain">
-                            <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                <div class="product-tabs">
+                    <button class="tab-btn active" data-tab="cafe">
+                        <ion-icon name="cafe-outline"></ion-icon> Café
+                    </button>
+                    <button class="tab-btn" data-tab="patisserie">
+                        <ion-icon name="ice-cream-outline"></ion-icon> Pâtisserie
+                    </button>
+                </div>
+
+                <!-- Café Tab -->
+                <div class="tab-content active" id="tab-cafe">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/coffee_hero_latte.png" alt="Cappuccino marocain">
+                                <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Cappuccino marocain</h3>
+                                <p>Espresso riche avec une touche de cannelle et mousse crémeuse.</p>
+                                <div class="product-footer">
+                                    <span class="price">18 DH</span>
+                                    <button class="btn-sm">Commander</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-info">
-                            <h3>Cappuccino marocain</h3>
-                            <p>Espresso riche avec une touche de cannelle et mousse crémeuse.</p>
-                            <div class="product-footer">
-                                <span class="price">18 DH</span>
-                                <button class="btn-sm">Commander</button>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/coffee_beans_macro.png" alt="Café glacé">
+                                <button class="favorite-btn active"><ion-icon name="heart"></ion-icon></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Café glacé Premium</h3>
+                                <p>Extraction à froid sur 12 heures, servi sur glace pilée.</p>
+                                <div class="product-footer">
+                                    <span class="price">20 DH</span>
+                                    <button class="btn-sm">Commander</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/moroccan_tea.png" alt="Thé à la menthe">
+                                <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Thé à la menthe Royal</h3>
+                                <p>Thé vert traditionnel avec menthe fraîche et une touche de fleur d'oranger.</p>
+                                <div class="product-footer">
+                                    <span class="price">12 DH</span>
+                                    <button class="btn-sm">Commander</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Product 2 -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/coffee_beans_macro.png" alt="Café glacé">
-                            <button class="favorite-btn active"><ion-icon name="heart"></ion-icon></button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Café glacé Premium</h3>
-                            <p>Extraction à froid sur 12 heures, servi sur glace pilée.</p>
-                            <div class="product-footer">
-                                <span class="price">20 DH</span>
-                                <button class="btn-sm">Commander</button>
+                </div>
+
+                <!-- Pâtisserie Tab -->
+                <div class="tab-content" id="tab-patisserie">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/coffee_shop_interior.png" alt="Gâteau au chocolat">
+                                <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Gâteau au chocolat</h3>
+                                <p>Fondant au chocolat noir intense, parfait avec votre café.</p>
+                                <div class="product-footer">
+                                    <span class="price">15 DH</span>
+                                    <button class="btn-sm">Commander</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Product 3 -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/moroccan_tea.png" alt="Thé à la menthe">
-                            <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Thé à la menthe Royal</h3>
-                            <p>Thé vert traditionnel avec menthe fraîche et une touche de fleur d'oranger.</p>
-                            <div class="product-footer">
-                                <span class="price">12 DH</span>
-                                <button class="btn-sm">Commander</button>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/moroccan_tea.png" alt="Croissant aux amandes">
+                                <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Croissant aux amandes</h3>
+                                <p>Croissant croustillant fourré à la crème d'amande et saupoudré de sucre glace.</p>
+                                <div class="product-footer">
+                                    <span class="price">14 DH</span>
+                                    <button class="btn-sm">Commander</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Product 4 -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="assets/images/coffee_shop_interior.png" alt="Gâteau au chocolat">
-                            <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Gâteau au chocolat</h3>
-                            <p>Fondant au chocolat noir intense, parfait avec votre café.</p>
-                            <div class="product-footer">
-                                <span class="price">15 DH</span>
-                                <button class="btn-sm">Commander</button>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/coffee_hero_latte.png" alt="Mille-feuilles">
+                                <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Mille-feuilles tradition</h3>
+                                <p>Pâte feuilletée croustillante avec crème pâtissière à la vanille.</p>
+                                <div class="product-footer">
+                                    <span class="price">18 DH</span>
+                                    <button class="btn-sm">Commander</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -201,30 +243,39 @@
                 <div class="testimonials-carousel">
                     <div class="testimonials-slider">
                         <div class="testimonial-card">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #D4AF37, #3E2723);">
+                                YB</div>
                             <ion-icon name="quote-outline" class="quote-icon"></ion-icon>
                             <p>"Le meilleur thé à la menthe que j'ai goûté à Casablanca ! L'ambiance est calme et
                                 parfaite
                                 pour travailler."</p>
                             <div class="reviewer">
                                 <span class="name">Yassine B.</span>
+                                <span class="role">Client régulier</span>
                                 <span class="stars">⭐⭐⭐⭐⭐</span>
                             </div>
                         </div>
                         <div class="testimonial-card">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #2E7D32, #1B5E20);">
+                                LK</div>
                             <ion-icon name="quote-outline" class="quote-icon"></ion-icon>
                             <p>"Leurs pâtisseries sont fraîches et délicieuses. Un vrai régal pour les yeux et les
                                 papilles."</p>
                             <div class="reviewer">
                                 <span class="name">Laila K.</span>
+                                <span class="role">Foodie passionnée</span>
                                 <span class="stars">⭐⭐⭐⭐⭐</span>
                             </div>
                         </div>
                         <div class="testimonial-card">
+                            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #5D4037, #3E2723);">
+                                OD</div>
                             <ion-icon name="quote-outline" class="quote-icon"></ion-icon>
                             <p>"Un espresso corsé et authentique. Le service est impeccable et toujours avec le
                                 sourire."</p>
                             <div class="reviewer">
                                 <span class="name">Omar D.</span>
+                                <span class="role">Amateur de café</span>
                                 <span class="stars">⭐⭐⭐⭐⭐</span>
                             </div>
                         </div>
@@ -252,20 +303,6 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846351052128!2d-7.6324294!3d33.5833446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzAwLjAiTiA3wrAzNyc1Ni43Ilc!5e0!3m2!1sfr!2sma!4v1620000000000!5m2!1sfr!2sma"
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    <div class="location-details">
-                        <div class="detail-item">
-                            <ion-icon name="location-outline"></ion-icon>
-                            <p>123 Avenue Mohamed V, Casablanca, Maroc</p>
-                        </div>
-                        <div class="detail-item">
-                            <ion-icon name="time-outline"></ion-icon>
-                            <p>Lundi - Dimanche: 08:00 - 22:00</p>
-                        </div>
-                        <div class="detail-item">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <p>+212 522 00 00 00</p>
-                        </div>
                     </div>
                 </div>
             </div>

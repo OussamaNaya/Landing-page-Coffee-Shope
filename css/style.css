@@ -298,6 +298,89 @@ h3,
     margin-bottom: 0.5rem;
 }
 
+/* Product Tabs */
+.product-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 2rem;
+    border: 2px solid var(--beige);
+    background: var(--surface-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.tab-btn:hover {
+    border-color: var(--primary-brown);
+    color: var(--primary-brown);
+}
+
+.tab-btn.active {
+    background: var(--primary-brown);
+    color: #fff;
+    border-color: var(--primary-brown);
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.2);
+}
+
+.tab-btn ion-icon {
+    font-size: 1.2rem;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeInTab 0.5s ease-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reviewer Avatar */
+.reviewer-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1px;
+}
+
+.reviewer .role {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

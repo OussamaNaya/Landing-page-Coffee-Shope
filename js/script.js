@@ -47,6 +47,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Product Tabs Switching
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active from all
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            // Activate clicked tab
+            btn.classList.add('active');
+            const tabId = 'tab-' + btn.dataset.tab;
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+
     // Order Button Simulation (Direct interaction feedback)
     document.querySelectorAll('.btn-sm').forEach(btn => {
         btn.addEventListener('click', () => {
