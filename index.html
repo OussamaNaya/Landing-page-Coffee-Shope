@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mâalem & Brew | L'Excellence du Café Marocain</title>
+    <meta name="description"
+        content="Découvrez Mâalem & Brew, le mariage parfait entre tradition marocaine et modernité. Savourez le meilleur café de la ville et nos pâtisseries artisanales.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons for modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Mâalem <span>& Brew</span></a>
+            <nav class="nav-links">
+                <a href="#hero">Accueil</a>
+                <a href="#categories">Café</a>
+                <a href="#featured">Pâtisserie</a>
+                <a href="#shop">Boutique</a>
+                <a href="#about">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content reveal">
+                <h1 class="hero-title">Nous servons le meilleur <span class="highlight">café</span> de la ville</h1>
+                <p class="hero-subtitle">Découvrez nos cafés artisanaux et nos douceurs faites maison, infusés de
+                    passion et de tradition marocaine.</p>
+                <div class="hero-actions">
+                    <a href="#featured" class="btn btn-primary">Commander maintenant</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories section">
+            <div class="container">
+                <div class="categories-grid reveal">
+                    <div class="category-card">
+                        <div class="category-icon green">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <span>Café chaud</span>
+                    </div>
+                    <div class="category-card active">
+                        <div class="category-icon brown">
+                            <ion-icon name="snow-outline"></ion-icon>
+                        </div>
+                        <span>Café froid</span>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon beige">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <span>Nos spécialités</span>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon cream">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <span>Desserts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="featured" class="featured section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Nos Incontournables</h2>
+                    <p>Une sélection raffinée pour ravir vos papilles</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="coffee_hero_latte.png" alt="Cappuccino marocain">
+                            <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cappuccino marocain</h3>
+                            <p>Espresso riche avec une touche de cannelle et mousse crémeuse.</p>
+                            <div class="product-footer">
+                                <span class="price">18 DH</span>
+                                <button class="btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="coffee_beans_macro.png" alt="Café glacé">
+                            <button class="favorite-btn active"><ion-icon name="heart"></ion-icon></button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Café glacé Premium</h3>
+                            <p>Extraction à froid sur 12 heures, servi sur glace pilée.</p>
+                            <div class="product-footer">
+                                <span class="price">20 DH</span>
+                                <button class="btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="moroccan_tea.png" alt="Thé à la menthe">
+                            <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Thé à la menthe Royal</h3>
+                            <p>Thé vert traditionnel avec menthe fraîche et une touche de fleur d'oranger.</p>
+                            <div class="product-footer">
+                                <span class="price">12 DH</span>
+                                <button class="btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="coffee_shop_interior.png" alt="Gâteau au chocolat">
+                            <button class="favorite-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gâteau au chocolat</h3>
+                            <p>Fondant au chocolat noir intense, parfait avec votre café.</p>
+                            <div class="product-footer">
+                                <span class="price">15 DH</span>
+                                <button class="btn-sm">Commander</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="promo-banner section">
+            <div class="container reveal">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h2>Nos grains de café 100% premium</h2>
+                        <p>Emportez l'expérience Mâalem chez vous. Une torréfaction artisanale pour un arôme inégalé.
+                        </p>
+                        <a href="#shop" class="btn btn-secondary">Découvrir nos produits</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="coffee_beans_macro.png" alt="Grains de café">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter section">
+            <div class="container reveal">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2>Rejoignez le club Mâalem</h2>
+                        <p>Inscrivez-vous et bénéficiez de <span>-15%</span> sur votre première commande</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre adresse e-mail" required>
+                            <button type="submit" class="btn btn-primary">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about">
+                    <a href="#" class="logo">Mâalem <span>& Brew</span></a>
+                    <p>L'art du café marocain revisité. Un espace chaleureux pour des moments inoubliables.</p>
+                    <div class="social-links">
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <a href="#">Click & Collect</a>
+                    <a href="#">Livraison à domicile</a>
+                    <a href="#">Événements</a>
+                    <a href="#">Espace Coworking</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Menu</h3>
+                    <a href="#">Cafés Signature</a>
+                    <a href="#">Thés & Infusions</a>
+                    <a href="#">Pâtisseries</a>
+                    <a href="#">Brunch</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <a href="#">Contactez-nous</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mâalem & Brew. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
