@@ -117,4 +117,31 @@ document.addEventListener('DOMContentLoaded', () => {
             autoPlayInterval = setInterval(nextSlide, 5000);
         });
     }
+
+    // Contact Form Submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.style.opacity = '0.7';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                submitBtn.textContent = '✓ Message envoyé !';
+                submitBtn.style.background = '#2E7D32';
+                submitBtn.style.opacity = '1';
+                contactForm.reset();
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    }
 });
