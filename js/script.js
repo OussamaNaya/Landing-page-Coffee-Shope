@@ -64,16 +64,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Order Button Simulation (Direct interaction feedback)
+    // Order Button - Scroll to Contact Form
     document.querySelectorAll('.btn-sm').forEach(btn => {
         btn.addEventListener('click', () => {
-            const originalText = btn.textContent;
-            btn.textContent = 'Ajouté !';
-            btn.style.background = '#2E7D32';
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.background = '';
-            }, 1000);
+            const productName = btn.closest('.product-info').querySelector('h3').textContent;
+            const contactSection = document.getElementById('contact');
+            const messageField = document.getElementById('message');
+
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Pre-fill the message with the product name
+                if (messageField) {
+                    setTimeout(() => {
+                        messageField.value = `Bonjour, je souhaite commander : ${productName}`;
+                        messageField.focus();
+                    }, 800);
+                }
+            }
         });
     });
 
